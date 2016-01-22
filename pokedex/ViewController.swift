@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 import AVFoundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
@@ -25,7 +26,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collection.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.Done
-        initAudio()
+        //initAudio()
         parsePokemonCSV()
     }
     
